@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════════════════════
+#  AI-IPS Dependencies
+# ═══════════════════════════════════════════════════════════
+flask>=3.0.0
+scapy>=2.5.0
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+streamlit>=1.30.0
+plotly>=5.18.0
+streamlit-autorefresh>=1.0.0
+
+# Windows-specific (for USB monitoring and WMI hardware stats)
+wmi>=1.5.1; sys_platform == "win32"
+pywin32>=306; sys_platform == "win32"
+
+# Linux-specific (Ubuntu 24.04 LTS - for USB monitoring and hardware stats)
+pyudev>=0.24.0; sys_platform == "linux"
+psutil>=5.9.0; sys_platform == "linux"
